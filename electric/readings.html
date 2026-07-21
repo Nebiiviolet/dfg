@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Readings - EBS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-body-tertiary">
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-white border-end min-vh-100 p-0">
+            <div class="p-4 border-bottom">
+                <h4 class="fw-bold text-primary mb-0"><i class="bi bi-lightning-charge-fill"></i> EBS</h4>
+                <small class="text-muted">Billing System</small>
+            </div>
+            <nav class="nav flex-column p-3 gap-2">
+                <a href="dashboard.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                <a href="customers.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-people"></i> Customers</a>
+                <a href="meters.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-tachometer"></i> Meters</a>
+                <a href="readings.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 bg-primary bg-opacity-10 text-primary fw-semibold"><i class="bi bi-clipboard-data"></i> Readings</a>
+                <a href="invoices.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-receipt"></i> Invoices</a>
+                <a href="payments.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-credit-card"></i> Payments</a>
+                <a href="tariffs.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-currency-dollar"></i> Tariffs</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div><h3 class="fw-bold mb-0">Meter Readings</h3><p class="text-muted mb-0">Record and track monthly usage</p></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Form -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 p-4">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-plus-circle text-primary"></i> Record New Reading</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label small fw-semibold">Select Meter</label>
+                                <select class="form-select rounded-3">
+                                    <option>CINV26-031635 (Samnang Heng)</option>
+                                    <option>CINV26-031636 (Srey Mom)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-semibold">Previous Reading</label>
+                                <input type="number" class="form-control rounded-3 bg-light" value="7000" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-semibold">Current Reading</label>
+                                <input type="number" class="form-control rounded-3" placeholder="Enter new value">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small fw-semibold">Reading Date</label>
+                                <input type="date" class="form-control rounded-3">
+                            </div>
+                            <button class="btn btn-primary w-100 rounded-3 fw-semibold py-2">Calculate & Save</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm rounded-3">
+                        <div class="card-header bg-white border-0 pt-4 px-4"><h5 class="fw-bold mb-0">Recent Readings</h5></div>
+                        <div class="card-body px-4">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th class="border-0 rounded-start-3">Date</th>
+                                        <th class="border-0">Meter #</th>
+                                        <th class="border-0">Previous</th>
+                                        <th class="border-0">Current</th>
+                                        <th class="border-0 rounded-end-3">Units (kWh)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>31 May 2026</td>
+                                        <td class="fw-semibold">CINV26-031635</td>
+                                        <td>7000</td>
+                                        <td>7052</td>
+                                        <td><span class="badge bg-primary rounded-pill">52</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>31 May 2026</td>
+                                        <td class="fw-semibold">CINV26-031636</td>
+                                        <td>5200</td>
+                                        <td>5310</td>
+                                        <td><span class="badge bg-primary rounded-pill">110</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>31 May 2026</td>
+                                        <td class="fw-semibold">CINV26-031637</td>
+                                        <td>12000</td>
+                                        <td>12250</td>
+                                        <td><span class="badge bg-primary rounded-pill">250</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

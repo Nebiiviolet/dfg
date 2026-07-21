@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EBS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-body-tertiary">
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 bg-white border-end min-vh-100 p-0">
+            <div class="p-4 border-bottom">
+                <h4 class="fw-bold text-primary mb-0"><i class="bi bi-lightning-charge-fill"></i> EBS</h4>
+                <small class="text-muted">Billing System</small>
+            </div>
+            <nav class="nav flex-column p-3 gap-2">
+                <a href="dashboard.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 bg-primary bg-opacity-10 text-primary fw-semibold"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                <a href="customers.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-people"></i> Customers</a>
+                <a href="meters.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-tachometer"></i> Meters</a>
+                <a href="readings.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-clipboard-data"></i> Readings</a>
+                <a href="invoices.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-receipt"></i> Invoices</a>
+                <a href="payments.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-credit-card"></i> Payments</a>
+                <a href="tariffs.html" class="nav-link d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-body-secondary"><i class="bi bi-currency-dollar"></i> Tariffs</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h3 class="fw-bold mb-0">Dashboard Overview</h3>
+                    <p class="text-muted mb-0">Welcome back, Admin Sokha</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-light rounded-circle position-relative shadow-sm"><i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span></button>
+                    <div class="d-flex align-items-center gap-2 bg-white p-2 rounded-3 shadow-sm">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;">S</div>
+                        <div><div class="fw-semibold small">Sokha Chen</div><div class="text-muted" style="font-size: 12px;">Administrator</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm rounded-3 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><p class="text-muted mb-1 small">Total Customers</p><h3 class="fw-bold mb-0">1,250</h3></div>
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-3 text-primary"><i class="bi bi-people-fill fs-4"></i></div>
+                        </div>
+                        <small class="text-success mt-2 d-block"><i class="bi bi-arrow-up"></i> 12% this month</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm rounded-3 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><p class="text-muted mb-1 small">Unpaid Invoices</p><h3 class="fw-bold mb-0 text-danger">45</h3></div>
+                            <div class="bg-danger bg-opacity-10 p-3 rounded-3 text-danger"><i class="bi bi-exclamation-triangle-fill fs-4"></i></div>
+                        </div>
+                        <small class="text-muted mt-2 d-block">Requires attention</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm rounded-3 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><p class="text-muted mb-1 small">Monthly Revenue</p><h3 class="fw-bold mb-0 text-success">$12,450</h3></div>
+                            <div class="bg-success bg-opacity-10 p-3 rounded-3 text-success"><i class="bi bi-cash-stack fs-4"></i></div>
+                        </div>
+                        <small class="text-success mt-2 d-block"><i class="bi bi-arrow-up"></i> 8% vs last month</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm rounded-3 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><p class="text-muted mb-1 small">Pending Payments</p><h3 class="fw-bold mb-0 text-warning">$3,200</h3></div>
+                            <div class="bg-warning bg-opacity-10 p-3 rounded-3 text-warning"><i class="bi bi-clock-history fs-4"></i></div>
+                        </div>
+                        <small class="text-muted mt-2 d-block">Awaiting clearance</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white border-0 pt-4 px-4"><h5 class="fw-bold mb-0">Recent Activity</h5></div>
+                <div class="card-body px-4">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success bg-opacity-10 p-2 rounded-circle text-success"><i class="bi bi-check-lg"></i></div>
+                                <div><div class="fw-semibold">Payment received from Kanya Eng</div><small class="text-muted">Invoice #INV-2026-0010 • 2 mins ago</small></div>
+                            </div>
+                            <span class="fw-bold text-success">+$385.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded-circle text-primary"><i class="bi bi-file-earmark-plus"></i></div>
+                                <div><div class="fw-semibold">New meter reading recorded</div><small class="text-muted">Meter CINV26-031635 • 1 hour ago</small></div>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">52 kWh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
