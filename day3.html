@@ -3,84 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAPFORCE Landing Page UI</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <title>Day 2 - HTML Basics</title>
 </head>
 <body>
 
-    <div  >
-      
-        <div >
-            <header>
-               
-                <nav  >
-                    <a href="#">Services</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">About</a>
-                    <a href="#">Insights</a>
-                    <a href="#">Contact</a>
-                </nav>
+    <!-- Header / Home Section -->
+    <header id="home">
+        <nav>
+            <a href="#home">Logo / Brand</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <!-- Header Right Actions -->
-                <div class="nav-right">
-                    <a href="#"  >Login</a>
-                    <a href="#"  >
-                        Get Started
-                        <span>&rarr;</span>
-                    </a>
-                </div>
-            </header>
-
-             
-            <div  >
-                <h1  >SAPFORCE.</h1>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Welcome to My Web Development Journey</h1>
+            <p>Building clean, responsive, and accessible websites starting from the fundamentals.</p>
+            <div>
+                <a href="#about">Learn More</a>
+                <a href="#contact">Get in Touch</a>
             </div>
-        </div>
+            <img src="https://via.placeholder.com/600x400" alt="Hero banner showing web development tools">
+        </section>
 
-        <div  >
-            <img src="https://img1.picmix.com/output/stamp/normal/0/8/9/5/1195980_f09d1.gif" alt="3D Abstract Liquid Sphere">
-        </div>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am taking on a daily coding challenge to master front-end development.</p>
+            
+            <h3>My Goals</h3>
+            <ul>
+                <li>Master HTML semantics and accessibility</li>
+                <li>Learn modern CSS layout techniques (Flexbox & Grid)</li>
+                <li>Build interactive web applications using JavaScript</li>
+            </ul>
 
-    
-        <div  >
-         
-            <div >
-                <div  >
-                    <div  >
-                        <div >
-                            <img csrc="https://i.pravatar.cc/100?img=12" alt="User 1">
-                            <img  src="https://i.pravatar.cc/100?img=32" alt="User 2">
-                            <img src="https://i.pravatar.cc/100?img=68" alt="User 3">
-                        </div>
-                        <span class="count-text">2M+</span>
-                    </div>
-                    <span>World active user</span>
-                </div>
+            <h3>Skills I'm Learning</h3>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Git & GitHub</li>
+            </ol>
+        </section>
+    </main>
 
-                <div >
-                    The design software that keeps your flow with AI tools and built-in graphics
-                </div>
-            </div>
-
-           
-            <div  >
-                <ul  >
-                    <li>Web based <span>/01</span></li>
-                    <li>Collaborative <span>/02</span></li>
-                    <li>Real-time <span>/03</span></li>
-                </ul>
-
-                <a href="#"  >
-                    <div  ></div>
-                    <span>How it works?</span>
-                </a>
-            </div>
-        </div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <form action="">
+            <h4>Contact Us</h4>
+            <label for="Username"></label>
+            <input type="name" placeholder="Your Name"><br>
+            <label for="email"></label>
+            <input type="email" name="" id="" placeholder="email"> <br>
+            <button>Sent Message</button>
+        </form>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
